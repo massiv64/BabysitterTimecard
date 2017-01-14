@@ -29,4 +29,10 @@ class Welcome extends CI_Controller {
 		var_dump($data);exit;
 
 	}
+	public function get_last_clock_out()
+	{
+		$this->load->model('Clock_model');
+		$data = $this->Clock_model->get_last_clock_out();
+		var_dump($data);exit;
+	}
 }
