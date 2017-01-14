@@ -1,14 +1,11 @@
 <?php
 class Clock_model extends CI_Model {
 
-	public function get_last_clock_in()
+    protected $table_name;
+
+	public function get_last_clock()
 	{
-		$query = $this->db->get('clock_in', 1);
-		return $query->result();
-	}
-	public function get_last_clock_out()
-	{
-		$query = $this->db->get('clock_out', 1);
+		$query = $this->db->get($this->table_name, 1);
 		return $query->result();
 	}
 

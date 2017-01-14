@@ -24,15 +24,15 @@ class Welcome extends CI_Controller {
 	}
 	public function get_last_clock_in()
 	{
-		$this->load->model('Clock_model');
-		$data = $this->Clock_model->get_last_clock_in();
+		$this->load->model('Clock_in_model');
+		$data = $this->Clock_in_model->get_last_clock();
 		var_dump($data);exit;
 
 	}
 	public function get_last_clock_out()
 	{
-		$this->load->model('Clock_model');
-		$data = $this->Clock_model->get_last_clock_out();
+		$this->load->model('Clock_out_model');
+		$data = $this->Clock_out_model->get_last_clock();
 		var_dump($data);exit;
 	}
 }
