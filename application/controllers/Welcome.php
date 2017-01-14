@@ -22,4 +22,11 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+	public function get_last_clock_in()
+	{
+		$this->load->model('Clock_model');
+		$data = $this->Clock_model->get_last_clock_in();
+		var_dump($data);exit;
+
+	}
 }
