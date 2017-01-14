@@ -1,0 +1,29 @@
+{
+  "name": "timecard",
+  "version": "0.0.1",
+  "description": "An app meant for keeping clock ins and clock outs because Travis is lazy.",
+  "author": "Nic Higuera <nic@euptilsunrise.com>",
+  "contributors": [
+    {
+      "name": "Travis Neal",
+      "email": "iskipschooltosnowboard@yahoo.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/massiv64/BabysitterTimecard"
+  },
+  "bugs": {
+    "url": "https://github.com/massiv64/BabysitterTimecard/issues"
+  },
+  "keywords": [
+    "massiv64",
+    "timecard"
+  ],
+  "preferGlobal": true,
+  "private": false,
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
