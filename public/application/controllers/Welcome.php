@@ -32,7 +32,16 @@ class Welcome extends CI_Controller {
 	public function get_last_clock_out()
 	{
 		$this->load->model('Clock_out_model');
+		var_dump($this->Clock_out_model->fbsql_table_name(result, index));exit;
 		$data = $this->Clock_out_model->get_last_clock();
 		var_dump($data);exit;
+	}
+	public function insert_clock_in()
+	{
+		$data = array(
+			'id' => 'id' ,
+			'time' => 'time' 
+			);
+		$this->db->insert('time', $data);
 	}
 }
