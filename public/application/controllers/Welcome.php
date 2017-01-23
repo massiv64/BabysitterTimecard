@@ -38,10 +38,6 @@ class Welcome extends CI_Controller {
 	}
 	public function insert_clock_in()
 	{
-		$data = array(
-			'id' => 'id' ,
-			'time' => 'time' 
-			);
-		$this->db->insert('time', $data);
+		
 	}
 }
