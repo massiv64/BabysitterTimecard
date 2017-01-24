@@ -11,7 +11,7 @@ class Clock_model extends CI_Model {
 	public function insert_clock_in($time)
 	{
 		$data = array(
-			'time' => $time
+			'time' => $time		
 			);
 		$this->db->insert('time', $data);
 	}

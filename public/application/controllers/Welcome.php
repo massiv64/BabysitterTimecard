@@ -38,6 +38,7 @@ class Welcome extends CI_Controller {
 	}
 	public function insert_clock_in()
 	{
-		
+		$this->load->model('Clock_Model');
+		var_dump($this->Clock_model->fbsql_table_name(result, index);exit;
 	}
 }
