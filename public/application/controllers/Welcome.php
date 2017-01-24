@@ -37,8 +37,22 @@ class Welcome extends CI_Controller {
 	}
 	public function insert_clock_in()
 	{
-		$this->load->model('Clock_Model');
-		$data = $this->Clock_model->insert_clock_in();
+		$this->load->model('Clock_in_model');
+		$data = $this->Clock_in_model->insert_clock_in();
 		var_dump($data);exit;
+	}
+	public function insert_clock_out()
+	{
+		$this->load->model('Clock_out_model');
+		$data = $this->Clock_out_model->insert_clock_out();
+		var_dump($data);exit;
+	}
+	public function get_all_times()
+	{
+		$this->load->model('Clock_in_model');
+		$this->load->model('Clock_out_model');
+		$data1 = $this->Clock_in_model->get_all_times();
+		$data2 = $this->Clock_out_model->get_all_times();
+		var_dump($data1, $data2);die;
 	}
 }
