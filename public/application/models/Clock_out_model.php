@@ -13,7 +13,7 @@ class Clock_out_model extends Clock_model {
 		// echo $time->format('Y-m-d H:i:s');
 		$time = $time->format('Y-m-d H:i:s');
 		$data = array(
-			'time' => $time		
+			'time' => $time
 			);
 		$this->db->insert($this->table_name, $data);
 	}
